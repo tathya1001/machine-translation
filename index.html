@@ -13,18 +13,19 @@
             font-family: "Varela Round", serif;
             margin: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #1e1e2f;
-            color: #ffffff;
+            background-color: #f4f4f9;
+            color: #333;
         }
 
         .container {
             width: 100%;
             max-width: 500px;
             padding: 20px;
-            background-color: #2a2a3b;
+            background-color: #ffffff;
             border-radius: 28px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
@@ -36,13 +37,13 @@
             height: 120px;
             padding: 12px;
             font-size: 1.2rem;
-            font-weight: 600;
-            border: 0px solid #555;
-            background-color: #383848;
+            font-weight: 500;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
             resize: none;
             text-align: left;
             box-sizing: border-box;
-            color: #f0f0f0;
+            color: #333;
         }
 
         textarea {
@@ -51,8 +52,8 @@
 
         .result {
             border-radius: 0px 0px 16px 16px;
-            background-color: #4e4e5b;
-            color: #f0f0f0;
+            background-color: #f0f7ff;
+            color: #333;
             overflow-y: auto;
         }
 
@@ -67,9 +68,9 @@
             width: 100%;
             padding: 12px;
             font-size: 1.1rem;
-            font-weight: 700;
+            font-weight: 500;
             margin-top: 20px;
-            background-color: #1983c9;
+            background-color: #2ca3f1;
             color: white;
             border: none;
             border-radius: 12px;
@@ -84,10 +85,53 @@
         textarea::placeholder {
             color: #aaa;
         }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h1 span {
+            margin: 0 10px;
+        }
     </style>
 </head>
 
 <body>
+    <h1>
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" height="24"
+                viewBox="0 0 32 24" width="32">
+                <mask id="a" height="24" maskUnits="userSpaceOnUse" width="32" x="0" y="0">
+                    <path d="m0 0h32v24h-32z" fill="#fff" />
+                </mask>
+                <g clip-rule="evenodd" fill-rule="evenodd" mask="url(#a)">
+                    <path d="m0 16h32v8h-32z" fill="#ffd018" />
+                    <path d="m0 8h32v8h-32z" fill="#e31d1c" />
+                    <path d="m0 0h32v8h-32z" fill="#272727" />
+                </g>
+            </svg>
+        </span>
+        German to English Translator
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" height="24">
+                <path d="m0 0h640v480h-640z" fill="#012169" />
+                <path
+                    d="m75 0 244 181 243-181h78v62l-240 179 240 178v61h-80l-240-179-239 179h-81v-60l239-178-239-178v-64z"
+                    fill="#fff" />
+                <path
+                    d="m424 281 216 159v40l-271-199zm-184 20 6 35-192 144h-54zm400-301v3l-249 188 2-44 197-147zm-640 0 239 176h-60l-179-134z"
+                    fill="#c8102e" />
+                <path d="m241 0v480h160v-480zm-241 160v160h640v-160z" fill="#fff" />
+                <path d="m0 193v96h640v-96zm273-193v480h96v-480z" fill="#c8102e" />
+            </svg>
+        </span>
+    </h1>
+
     <div class="container">
         <textarea id="input-text" placeholder="Enter text in German"></textarea>
         <div id="result-text" class="result">Translation will appear here</div>
