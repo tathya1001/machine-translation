@@ -2,7 +2,7 @@
 
 This project aims to develop a basic machine translation model where the input is a German sentence, and the output is the corresponding English sentence. The model leverages Gated Recurrent Units (GRUs) and an attention mechanism to enhance translation quality.
 
-- [Kaggle Code](https://www.kaggle.com/code/tathya1001/german-to-english-machine-translation)
+[Kaggle Code](https://www.kaggle.com/code/tathya1001/german-to-english-machine-translation)
 
 ## Model Architecture
 1. **Encoder**: Encodes the German sentence into a context vector using GRUs.
